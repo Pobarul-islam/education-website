@@ -36,7 +36,7 @@ body {
 }
 
 .container {
-  width: var(  --container--width-lg);
+  width: var(--container--width-lg);
   margin: 0 auto;
 }
 
@@ -68,76 +68,88 @@ a {
   color: var(--color-white);
 }
 
-
-
-img{
-    width: 100%;
-    display: block;
-    object-fit: cover;
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-
-.btn{
-    display: inline-block;
-    background: var(--color-white);
-    color: var(--color-black);
-    padding: 1rem 2rem;
-    border: 1px solid transparent;
-    font-weight: 500;
-    transition: var(--transition);
-
+.btn {
+  display: inline-block;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: var(--transition);
 }
 
-.btn:hover{
-
-    background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
+.btn:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
 }
 
-.btn-primary{
-    background: var(--color-danger);
-    color: var(--color-white);
+.btn-primary {
+  background: var(--color-danger);
+  color: var(--color-white);
 }
-
-
 
 /* ============== Navbar =============== */
 
-nav{
-    background: transparent;
-    width: 100vw;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    z-index: 11;
+nav {
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
 }
 
-
-.nav_container{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-nav button{
-    display: none;
+nav button {
+  display: none;
 }
 
-.nav_menu{
-    display: flex;
-    align-items: center;
-    gap: 4rem;
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
 }
 
-
-.nav_menu a{
-    font-size: 0.9rem;
-    transition: var(--transition);
+.nav_menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
 }
 
-.nav_menu a:hover{
-    color: var(--color-bg2);
+.nav_menu a:hover {
+  color: var(--color-bg2);
+}
+
+/* ============== Header =============== */
+
+header {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 5rem;
+}
+
+.header_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+  height: 100%;
+}
+
+.header_left p {
+  margin: 1rem 0 2.4rem;
 }
