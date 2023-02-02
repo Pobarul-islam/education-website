@@ -236,82 +236,128 @@ header {
   font-size: 0.85rem;
 }
 
-
 /* ============== Popular courses =============== */
 
-.courses{
-    margin-top: 10rem;
+.courses {
+  margin-top: 10rem;
 }
 
-.course_container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.course_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.course{
-    background: var(--color-bg1);
-    text-align:center;
-    border: 1px solid transparent;
-    transition: var(--transition);
+.course {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 
-.course:hover{
-    background: transparent;
-    border-color: var(--color-primary);
+.course:hover {
+  background: transparent;
+  border-color: var(--color-primary);
 }
 
-
-.course_info{
-    padding: 2rem;
+.course_info {
+  padding: 2rem;
 }
 
-.course_info p{
-    margin: 1.2rem 0 2rem;
-    font-size: 0.9rem;
+.course_info p {
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
 }
-
-
 
 /* ============== Frequently Asked Question=============== */
 
-.faqs{
-    background-color: var(--color-bg1);
-    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+.faqs {
+  background-color: var(--color-bg1);
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
 
-.faqs_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+.faqs_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
-.faq{
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
-    height: fit-content;
-    background: var(--color-primary);
-    cursor: pointer;
+.faq {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  height: fit-content;
+  background: var(--color-primary);
+  cursor: pointer;
 }
 
-.faq h4{
-
-    font-size: 1rem;
-    list-style: 2.2;
+.faq h4 {
+  font-size: 1rem;
+  list-style: 2.2;
 }
 
-.faq_icon{
-    align-items: flex-start;
-    font-size: 1.2rem;
+.faq_icon {
+  align-items: flex-start;
+  font-size: 1.2rem;
 }
 
-.faq p{
-    margin: 0.8rem;
-    display: none;
+.faq p {
+  margin: 0.8rem;
+  display: none;
 }
 
-.faq.open p{
-    display: block;
+.faq.open p {
+  display: block;
+}
+
+/* ============== Testimonials =============== */
+
+.testimonials_container {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.testimonial {
+  padding-top: 2rem;
+}
+
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1rem solid var(--color-bg1);
+}
+
+.testimonial_info {
+  text-align: center;
+}
+
+.testimonial_body {
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.testimonial_body::before {
+  content: '';
+  display: block;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    var(--color-primary),
+    var(--color-primary),
+    var(--color-primary)
+  );
+
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: -1.5rem;
+  transform: rotate(45deg);
 }
