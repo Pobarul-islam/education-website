@@ -25,7 +25,6 @@
   --container--width-md: 90%;
   --container--width-sm: 94%;
   --transition: all 400ms ease;
-   
 }
 
 body {
@@ -164,7 +163,9 @@ header {
 
 /* ============== CATEGORIES =============== */
 
-.category .grid-list { padding-block: 40px 52px; }
+.category .grid-list {
+  padding-block: 40px 52px;
+}
 
 .category-card {
   display: flex;
@@ -173,17 +174,17 @@ header {
   border-inline-start: 4px solid transparent;
 }
 
-.category-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
+.category-card:is(:hover, :focus-within) {
+  border-color: var(--light-coral);
+}
 
-.category-card .title-sm { margin-block-start: 4px; }
+.category-card .title-sm {
+  margin-block-start: 4px;
+}
 
-.category .btn { margin-inline: auto; }
-
-
-
-
-
-
+.category .btn {
+  margin-inline: auto;
+}
 
 .categories {
   background: var(--color-bg1);
@@ -559,9 +560,6 @@ footer ul li a:hover {
     margin-top: 5%;
   }
 
-
-
-
   .studentTestimonial {
     margin-top: 10rem;
   }
@@ -641,132 +639,148 @@ footer ul li a:hover {
   }
 }
 
-
-
-  /* ============== Pricing =============== */
+/* ============== Pricing =============== */
 
 h1 {
-	letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 .pricing-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pricing {
-	background-color: var(--color-bg1);
-	border: 1px solid #eee;
-	margin: 10px;
-	text-align: center;
+  background-color: var(--color-bg1);
+  border: 1px solid #eee;
+  margin: 10px;
+  text-align: center;
 }
 
 .pricing.highlight {
-	border-top: 2px solid #50bc01;
-	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+  border-top: 2px solid #50bc01;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
 }
 
 .pricing h1 {
-	color: #5caefe;
-	margin: 30px 0 0;
+  color: #5caefe;
+  margin: 30px 0 0;
 }
 
 .pricing h4 {
-	margin: 20px 0 0;
+  margin: 20px 0 0;
 }
 
 .pricing small.green {
-	color: #50bc01;
-	margin: 0;
+  color: #50bc01;
+  margin: 0;
 }
 
 .pricing small.green + h1 {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .pricing small {
-	color: #777;
+  color: #777;
 }
 
 .pricing ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 40px 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 0;
 }
 
 .pricing ul li {
-	margin: 20px 30px;
-	max-width: 250px;
+  margin: 20px 30px;
+  max-width: 250px;
 }
 
-
-
 .pricing button {
-	background-color: #5caefe;
-	border: 0;
-	border-radius: 2px;
-	color: #fff;
-	padding: 12px 20px;
-	margin-bottom: 30px;
+  background-color: #5caefe;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 
 .floating-btn {
-	border-radius: 26.5px;
-	background-color: #001f61;
-	border: 1px solid #001f61;
-	box-shadow: 0 16px 22px -17px #03153b;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 12px 20px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 999;
+  border-radius: 26.5px;
+  background-color: #001f61;
+  border: 1px solid #001f61;
+  box-shadow: 0 16px 22px -17px #03153b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
 }
 
+/* ============== Subject =============== */
 
-
-  /* ============== Subject =============== */
-
-.subjects{
+.subjects {
   background: var(--color-bg2);
   align-items: center;
   text-align: center;
-
-  
 }
 
-
-
-.box-container{
+.box-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   margin: auto;
   gap: 5%;
   padding: 5%;
-
-
 }
 
+.box {
+  border: 1px solid var(--color-danger);
+  padding: 3%;
+}
 
-.box img{
+.box img {
   width: 60%;
-    justify-content: center;
+  justify-content: center;
   margin: auto;
-
 }
 
-.box:hover{
+.box:hover {
   border: 1px solid white;
   transition: var(--transition);
-   background: var(--color-bg1);
-   box-shadow: whitesmoke;
- 
+  background: var(--color-bg1);
+  box-shadow: whitesmoke;
+}
+
+/* animation  */
+
+.header_left {
+ animation:  fadeUp 2s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header_right {
+ animation:  fadeUp 3s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
